@@ -1,0 +1,11 @@
+{
+  "name": "@tillwhen/common",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsup src/index.ts --dts --format=cjs",
+    "dev": "tsup src/index.ts --watch --dts --format=cjs"
+  }
+}
